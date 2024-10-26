@@ -2,12 +2,18 @@ import com.example.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.Before;
 import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
 import static org.junit.Assert.assertEquals;
+
+
 
 
 @RunWith(Parameterized.class)
 public class ParameterizedLionTest {
+    
     
     private String sex;
     private boolean result;
@@ -26,6 +32,11 @@ public class ParameterizedLionTest {
                 {"Самец", true},
                 {"Самка", false},
         };
+    }
+
+    @Before
+    public void setUp() {
+        MockitoAnnotations.initMocks(this);
     }
 
     @Test

@@ -7,8 +7,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals; //МОЖНО УБРАТЬ ЛИШНИЙ ИМПОРТ ЧЕРЕЗ *
-
+import static org.junit.Assert.assertEquals;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -20,8 +19,8 @@ public class AlexTheLionTest {
     @Test
     public void testGetFriends() throws Exception {
         AlexTheLion alexTheLion = new AlexTheLion(feline);
-        List<String> AlexFriends = List.of("Марти", "Мелман", "Глория");
-        assertEquals(AlexFriends, alexTheLion.getFriends());
+        List<String> alexFriends = List.of("Марти", "Мелман", "Глория");
+        assertEquals(alexFriends, alexTheLion.getFriends());
     }
 
     @Test

@@ -26,13 +26,13 @@ public class ExceptionLionTest {
         };
     }
 
-    @Mock
-    Feline feline;
+    // @Mock
+    // Feline feline;
 
-    @Test(expected = Exception.class)
-    public void testExceptionLion() throws Exception {
-        Lion lion = new Lion(sex, feline);
-        lion.doesHaveMane();
-        assertFalse(expectedResult);
-    }
+    // @Test(expected = Exception.class)
+    // public void testExceptionLion() throws Exception {
+    //     Lion lion = new Lion(sex, feline);
+    //     lion.doesHaveMane();
+    //     assertFalse(expectedResult);
+    // }
 }

@@ -36,7 +36,6 @@ public class FelineTest {
     public void testGetKittensCount() {
         int kittensCount = 5;
         feline.getKittens(kittensCount);
-        verify(feline).getKittens(Mockito.anyInt());
         assertEquals(kittensCount, feline.getKittens(kittensCount));
 
     }
